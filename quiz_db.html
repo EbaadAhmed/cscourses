@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=" css/bootstrap.min.css">
+  <style>
+ button{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    
+    height: 30px;
+    
+
+}
+p{font-size:25px;}
+h3{font-weight:bold;}
+  </style>
+  
+</head>
+
+  <body class="b" style="background-color:#EEE6E6" >
+  
+	<div class="container">
+		 
+		<div class="row">
+			<div class="col-sm-12" style="background-color:#6224F2;">
+			
+				<center><h2> <span style="font-family: Monotype Corsiva;color:white;"><b>Computer Science Core Subjects</span></h2></center>
+				<center>
+				<button onclick="parent.location='quiz.html'">Back</button>
+					<button onclick="parent.location=' index.html'">Home</b></button>
+				</center>
+			</div>
+			
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-sm-12" >
+			<form>
+			1) How many levels of database?<br>
+			<input type="radio" name="colors" id="t">3<br>
+			<input type="radio" name="colors" id="g">5<br>
+			<input type="radio" name="colors" id="g">7<br>
+			<input type="radio" name="colors" id="t1">4<br>
+			
+			</form>
+			
+			<form>
+			2) How many types of mapping?<br>
+			<input type="radio" name="colors" id="t">6<br>
+			<input type="radio" name="colors" id="g">3<br>
+			<input type="radio" name="colors" id="g">7<br>
+			<input type="radio" name="colors" id="t2">2<br>
+			
+			</form>
+			
+			<form>
+			3) Logical data independence refers to the immunity of external schemas to changes in the conceptual schema.<br>
+			<input type="radio" name="colors" id="t3">True<br>
+			<input type="radio" name="colors" id="f">False<br>
+			
+			</form>
+			
+			<form>
+			4) A language that allows tile user to state what data is needed rather than how it is to be retrieved is called non-procedural DML.<br>
+			<input type="radio" name="colors" id="t">True<br>
+			<input type="radio" name="colors" id="t4">False<br>
+			
+			
+			</form>
+			<form>
+			5) How many design stages of the database?<br>
+			<input type="radio" name="colors" id="t">6<br>
+			<input type="radio" name="colors" id="f">10<br>
+			<input type="radio" name="colors" id="f">12<br>
+			<input type="radio" name="colors" id="t5">11<br>
+			
+			</form>
+			
+			<button onclick="check()">Submit</button><br><br>
+			<p>Your score will show below</p>
+			<p id="demo"> </p>
+			<script>
+				
+				function check() {
+				var value=0;
+					if (document.getElementById("t1").checked == true){
+					value++;
+					}
+					if (document.getElementById("t2").checked == true){
+					value++;
+					}
+					if (document.getElementById("t3").checked == true){
+					value++;
+					}
+					if (document.getElementById("t4").checked == true){
+					value++;
+					}
+					if (document.getElementById("t5").checked == true){
+					value++;
+					}
+					if (document.getElementById("t6").checked == true){
+					value++;
+					}
+					if (document.getElementById("t7").checked == true){
+					value++;
+					}
+					if (document.getElementById("t8").checked == true){
+					value++;
+					}
+					if (document.getElementById("t9").checked == true){
+					value++;
+					}
+					
+					//document.write(value);
+					//alert(value);
+					document.getElementById("demo").innerHTML = value;
+}
+</script>
+
+			
+			</div>
+			
+		</div>
+			
+			
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src=" jquery/jquery.min.js"></script>
+  <script src=" js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

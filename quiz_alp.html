@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=" css/bootstrap.min.css">
+  <style>
+  button{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    
+    height: 30px;
+    
+
+}
+p{font-size:25px;}
+h3{font-weight:bold;}
+  </style>
+  
+</head>
+
+  <body class="b" style="background-color:#EEE6E6" >
+  
+	<div class="container">
+		 
+		<div class="row">
+			<div class="col-sm-12" style="background-color:#6224F2;">
+			
+				<center><h2> <span style="font-family: Monotype Corsiva;color:white;"><b>Computer Science Core Subjects</span></h2></center>
+				<center>
+				<button onclick="parent.location='quiz.html'">Back</button>
+					<button onclick="parent.location=' index.html'">Home</b></button>
+				</center>
+			</div>
+			
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-sm-12" >
+			<form>
+			Stack have three types of operation?<br>
+			<input type="radio" name="colors" id="t1">true<br>
+			<input type="radio" name="colors" id="g">false<br>
+			
+			</form>
+			
+			<form>
+			Segment registers can hold starting address?<br>
+			<input type="radio" name="colors" id="t2">true<br>
+			<input type="radio" name="colors" id="g">false<br>
+			
+			</form>
+			
+			<form>
+			Another name of offset registers is? <br>
+			<input type="radio" name="colors" id="t3">index registers<br>
+			<input type="radio" name="colors" id="g">segment registers<br>
+			<input type="radio" name="colors" id="g">none<br>
+			</form>
+			
+			<form>
+			There are four types of flags?<br>
+			<input type="radio" name="colors" id="t">true<br>
+			<input type="radio" name="colors" id="f4">false<br>
+			
+			</form>
+			
+			
+			<button onclick="check()">Submit</button><br><br>
+			<p>Your score will show below</p>
+			<p id="demo"> </p>
+			<script>
+				var value=0;
+				function check() {
+					if (document.getElementById("t1").checked == true){
+					value++;
+					}
+					if (document.getElementById("t2").checked == true){
+					value++;
+					}
+					if (document.getElementById("t3").checked == true){
+					value++;
+					}
+					if (document.getElementById("f4").checked == true){
+					value++;
+					}
+					
+					//document.write(value);
+					//alert(value);
+					document.getElementById("demo").innerHTML = value;
+}
+</script>
+
+			
+			</div>
+			
+		</div>
+			
+			
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src=" jquery/jquery.min.js"></script>
+  <script src=" js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

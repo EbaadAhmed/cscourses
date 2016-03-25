@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=" css/bootstrap.min.css">
+  <style>
+  button{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    
+    height: 30px;
+    
+
+}
+p{font-size:25px;}
+h3{font-weight:bold;}
+  </style>
+  
+</head>
+
+  <body class="b" style="background-color:#EEE6E6" >
+  
+	<div class="container">
+		 
+		<div class="row">
+			<div class="col-sm-12" style="background-color:#6224F2;">
+			
+				<center><h2> <span style="font-family: Monotype Corsiva;color:white;"><b>Computer Science Core Subjects</span></h2></center>
+				<center>
+				<button onclick="parent.location='quiz.html'">Back</button>
+					<button onclick="parent.location=' index.html'">Home</b></button>
+				</center>
+			</div>
+			
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-sm-12" >
+			<form>
+			1) Class contain the data through data members?<br>
+			<input type="radio" name="colors" id="t1">true<br>
+			<input type="radio" name="colors" id="g">false<br>
+			
+			</form>
+			
+			<form>
+			2) General form of class, <br>
+			class class_name{<br>//body of class<br>}<br>
+			<input type="radio" name="colors" id="t2">true<br>
+			<input type="radio" name="colors" id="g">false<br>
+			
+			</form>
+			
+			<form>
+			3) Following line is correct to create the object or not?<br>
+			Classname objectname= new classname(); <br>
+			<input type="radio" name="colors" id="t3">true<br>
+			<input type="radio" name="colors" id="f">false<br>
+			</form>
+			
+			<form>
+			4) General form of a method,<br>
+			access return-type name(parameter) body of method}?<br>
+			<input type="radio" name="colors" id="t4">true<br>
+			<input type="radio" name="colors" id="f">false<br>
+			
+			</form>
+			<form>
+			5) Which of the following is true for constructor?<br>
+			<input type="radio" name="colors" id="t">Name of the constructor is exactly same as that of the class.<br>
+			<input type="radio" name="colors" id="f">Constructors do not have return type.<br>
+			<input type="radio" name="colors" id="f">Constructors are invoked by the new operator upon the memory allocated for an object.<br>
+			<input type="radio" name="colors" id="f">Constructors are there to initialize the objects.<br>
+			<input type="radio" name="colors" id="t5">All<br>
+			</form>
+			<form>
+			6) This keyword refers to the object on which the method is acting.<br>
+			<input type="radio" name="colors" id="t6">true<br>
+			<input type="radio" name="colors" id="f">false<br>
+			
+			</form>
+			<form>
+			7) General form of two dimensional array,<br>
+			type[,] arrayname = new int[10, 20];<br>
+			<input type="radio" name="colors" id="t7">true<br>
+			<input type="radio" name="colors" id="f">false<br>
+			
+			</form>
+			
+			<form>
+			8) General form of jagged array,<br>
+			type[][] array-name=new type[size][];<br>
+			<input type="radio" name="colors" id="t8">true<br>
+			<input type="radio" name="colors" id="f">false<br>
+			
+			</form>
+			
+			<form>
+			9) Which of the following is use in inheritance,<br>
+			type[][] array-name=new type[size][];<br>
+			<input type="radio" name="colors" id="t">;<br>
+			<input type="radio" name="colors" id="f">,<br>
+			<input type="radio" name="colors" id="t9">:<br>
+			<input type="radio" name="colors" id="f">.<br>
+			
+			</form>
+			
+			<button onclick="check()">Submit</button><br><br>
+			<p>Your score will show below</p>
+			<p id="demo"> </p>
+			<script>
+				
+				function check() {
+				var value=0;
+					if (document.getElementById("t1").checked == true){
+					value++;
+					}
+					if (document.getElementById("t2").checked == true){
+					value++;
+					}
+					if (document.getElementById("t3").checked == true){
+					value++;
+					}
+					if (document.getElementById("t4").checked == true){
+					value++;
+					}
+					if (document.getElementById("t5").checked == true){
+					value++;
+					}
+					if (document.getElementById("t6").checked == true){
+					value++;
+					}
+					if (document.getElementById("t7").checked == true){
+					value++;
+					}
+					if (document.getElementById("t8").checked == true){
+					value++;
+					}
+					if (document.getElementById("t9").checked == true){
+					value++;
+					}
+					
+					//document.write(value);
+					//alert(value);
+					document.getElementById("demo").innerHTML = value;
+}
+</script>
+
+			
+			</div>
+			
+		</div>
+			
+			
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src=" jquery/jquery.min.js"></script>
+  <script src=" js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

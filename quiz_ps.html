@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=" css/bootstrap.min.css">
+  <style>
+  button{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    
+    height: 30px;
+    
+
+}
+p{font-size:25px;}
+h3{font-weight:bold;}
+  </style>
+  
+</head>
+
+  <body class="b" style="background-color:#EEE6E6" >
+  
+	<div class="container">
+		 
+		<div class="row">
+			<div class="col-sm-12" style="background-color:#6224F2;">
+			
+				<center><h2> <span style="font-family: Monotype Corsiva;color:white;"><b>Computer Science Core Subjects</span></h2></center>
+				<center>
+				<button onclick="parent.location='quiz.html'">Back</button>
+					<button onclick="parent.location=' index.html'">Home</b></button>
+				</center>
+			</div>
+			
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-sm-12" >
+			
+			<form>
+			1) Select the integer from the following options?<br>
+			<input type="radio" name="colors" id="555">555<br>
+			<input type="radio" name="colors" id="g">4.2<br>
+			<input type="radio" name="colors" id="g">.2<br>
+			<input type="radio" name="colors" id="g">00.2<br>
+			</form>
+			
+			<form>
+			2) Select the float from the following options?<br>
+			<input type="radio" name="colors" id="555">555<br>
+			<input type="radio" name="colors" id="g">42.0<br>
+			<input type="radio" name="colors" id="f">2.2<br>
+			<input type="radio" name="colors" id="g">2<br>
+			</form>
+			
+			<form>
+			3) "what is your name?" <br>
+			Is this string?<br>
+			<input type="radio" name="colors" id="t">true<br>
+			<input type="radio" name="colors" id="g">false<br>
+			
+			</form>
+			
+			<form>
+			4) "F"<br>
+			Is this character?<br>
+			<input type="radio" name="colors" id="tr">true<br>
+			<input type="radio" name="colors" id="g">false<br>
+			
+			</form>
+			
+			<button onclick="check()">Submit</button><br><br>
+			<p>Your score will show below</p>
+			<p id="demo"> </p>
+			<script>
+				
+				function check() {
+				var value=0;
+					if (document.getElementById("555").checked == true){
+					value++;
+					}
+					if (document.getElementById("f").checked == true){
+					value++;
+					}
+					if (document.getElementById("t").checked == true){
+					value++;
+					}
+					if (document.getElementById("tr").checked == true){
+					value++;
+					}
+					//document.write(value);
+					//alert(value);
+					document.getElementById("demo").innerHTML = value;
+}
+</script>
+
+			
+			</div>
+			
+		</div>
+			
+			
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src=" jquery/jquery.min.js"></script>
+  <script src=" js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
